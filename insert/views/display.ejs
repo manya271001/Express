@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <a href="/student/home">HOME</a>
+    <a href="/student/insert">Insert</a>
+    <a href="/student/display">Display</a>
+    <hr size="4" color="red">
+    <table border="1" align="center" >
+        <tr>
+            <th>RollNo</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Fees</th>  
+        </tr>
+        <% 
+        stuData.forEach((key)=>{
+        %>
+            <tr>
+                <td><%= key.rollNo %></td>
+                 <td><%= key.name %></td>
+                  <td><%= key.city %></td>
+                   <td><%= key.fees %></td>
+            </tr>
+
+  <% 
+        })
+        
+        %>
+    </table>
+    <hr size="4" color="red">
+</body>
+</html>
